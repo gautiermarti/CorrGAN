@@ -1,0 +1,18 @@
+{
+  "source_project": "corrflow-research",
+  "source_base_commit": "142fcae",
+  "snapshot_date": "2026-10-05",
+  "note": "Includes reviewed working-tree changes; per-file hashes identify the source before import/package adaptation.",
+  "files": {
+    "src/corrflow/models/gan.py": "6171905bea42c3377be4c533b8d5263a634c4d27f8723e1796a1e3d1bc3dc408",
+    "src/corrflow/gan_validation.py": "99e71d24371fa428a2ac01698ba1383d983e9cf7f12b0bd420cc7743723289e4",
+    "scripts/train_ccorrgan.py": "be427896e2a48ae0f3e8c8fd50cc7094cfc42cebe9b849a12385f8b3391b03ea",
+    "scripts/sample_ccorrgan.py": "70ac32c7578c29746d8d2a3d41ff010972f138393d6c4963a35c5976c263b34e",
+    "scripts/sample_pretrained_corrgan.py": "fc8d627ede4f22dc01a8336bd2ad945768c8a4cff9424d3fc6fc18f3c92fff39",
+    "tests/test_gan.py": "def45c5c97908ed87e0cb1fc95e62f85e8d991088b97b79a3dc8895cfd8837dc",
+    "tests/test_gan_validation.py": "a280fbf3d05fa90e1ecbeb51f6f6dab2cceb1f20268407ea70610dd37e946cb9",
+    "configs/ccorrgan_image.yaml": "cc69c31b75bf6daf4657bab96032759b875946f07d0a18091a9655c7902ee1e1",
+    "configs/ccorrgan_revision_sp500.yaml": "47ae15eb48fddb1c41e3b7e5a074e57ee628ccf7d71c17d0a0de50536b5880ea",
+    "configs/ccorrgan_revision_taiwan.yaml": "2a0023abc186c411f524bd4045e8b133b51f4e7786e0bad4ebadfc03846260ad"
+  }
+}

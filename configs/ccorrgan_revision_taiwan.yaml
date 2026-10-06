@@ -1,0 +1,18 @@
+model:
+  latent_dim: 80
+  classes: 3
+  channels: 128
+  continuous_condition: true
+training:
+  batch_size: 64
+  epochs: 200
+  checkpoint_every: 20
+  learning_rate: 0.0002
+  beta1: 0.5
+  beta2: 0.999
+  label_smoothing: 0.1
+  gradient_clip: 10.0
+  seed: 1701
+  precision: float32
+  structural_validation_every: 10
+  validation_per_class: 100

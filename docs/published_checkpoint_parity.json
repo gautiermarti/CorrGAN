@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "max_error": 2.6226043701171875e-06,
+  "mean_error": 3.355204114541266e-07,
+  "matrices": 30,
+  "entries": 192000,
+  "atol": 2e-05,
+  "rtol": 2e-05,
+  "tensorflow": "2.21.0",
+  "torch": "2.13.0+cu130",
+  "model_sha256": "5a7f0fa2ad35e31e1b71621f7ee4a93f4c01100de74e1608b2054d0decb97984",
+  "reference_sha256": "8c5ace563382bb41bae48ffac5c656fd31c9aa08475a79faa5ace0dd323abda0"
+}

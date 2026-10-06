@@ -1,0 +1,18 @@
+protocol: unconditional_reference_reconstruction_v1
+model:
+  latent_dim: 100
+  channels: 256
+discriminator:
+  channels: 64
+  dropout: 0.3
+training:
+  seed: 1701
+  batch_size: 64
+  epochs: 50
+  learning_rate: 0.0001
+  beta1: 0.9
+  beta2: 0.999
+  validation_every: 5
+  validation_samples: 300
+  validation_seed: 44301
+  sampling_batch_size: 64

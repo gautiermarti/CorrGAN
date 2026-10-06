@@ -1,0 +1,13 @@
+include CITATION.cff requirements*.txt
+recursive-include configs *.yaml *.yml
+recursive-include docs *.md *.json *.png
+recursive-include examples *.py
+recursive-include research *.py *.json
+recursive-include tests *.py
+global-exclude __pycache__ *.pyc
+
+include CONTRIBUTING.md SECURITY.md CHANGELOG.md
+recursive-include .github *.yml *.md
+
+include CONTRIBUTING.md RELEASE_STATUS.md EXPORT_MANIFEST.json
+recursive-include .github *.yml

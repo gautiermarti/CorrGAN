@@ -1,0 +1,56 @@
+[build-system]
+requires = ["setuptools>=77.0.3"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "corrgan"
+version = "0.1.0rc2"
+description = "CorrGAN and cCorrGAN implementation and reproduction tools"
+readme = "README.md"
+requires-python = ">=3.12"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{name = "Gautier Marti"}]
+keywords = ["correlation-matrices", "generative-models", "reproducible-research"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Science/Research",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = ["corrbench==0.1.0rc2", "numpy>=2.0", "pyyaml>=6.0", "torch>=2.6"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.11", "build"]
+legacy = ["tensorflow>=2.15"]
+published-conditional = ["h5py>=3.11"]
+
+[project.urls]
+Repository = "https://github.com/gautiermarti/corrgan"
+Issues = "https://github.com/gautiermarti/corrgan/issues"
+Documentation = "https://github.com/gautiermarti/corrgan#readme"
+Changelog = "https://github.com/gautiermarti/corrgan/blob/main/CHANGELOG.md"
+
+[project.scripts]
+corrgan-train = "corrgan.cli.train_ccorrgan:main"
+corrgan-train-unconditional = "corrgan.cli.train_unconditional:main"
+corrgan-sample-unconditional = "corrgan.cli.sample_unconditional:main"
+corrgan-sample = "corrgan.cli.sample_ccorrgan:main"
+corrgan-sample-legacy = "corrgan.cli.sample_pretrained_corrgan:main"
+corrgan-sample-published-conditional = "corrgan.cli.sample_published_ccorrgan:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+
+[tool.ruff]
+line-length = 88
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
